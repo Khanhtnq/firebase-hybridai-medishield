@@ -3,7 +3,7 @@
 **Hackathon**: Google Firebase #BuildHybridAI 2026 ($30,000 USD Cash Prize Pool)  
 **Project Title**: MediShield & PrivacyScrub Hybrid Studio  
 **Author**: Khanhtnq (`218711032+Khanhtnq@users.noreply.github.com`)  
-**Repository**: `e:\BOUTY ARGON\workspaces\firebase_hybrid_ai_30k`  
+**Repository**: `https://github.com/Khanhtnq/medishield-privacyscrub-hybrid-studio`  
 **Demo Video**: `assets/demo_hybrid_1080p.mp4` (40 seconds, 1920x1080 @ 30fps)  
 **Live Interactive Dashboard**: `docs/index.html`  
 
