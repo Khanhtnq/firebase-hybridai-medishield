@@ -1,0 +1,22 @@
+{
+  "name": "medishield-privacyscrub-hybrid-studio",
+  "version": "1.0.0",
+  "description": "Zero-data-leak local-first Sensitive Document/Code Redactor & Structured Extractor with Firebase AI Logic PREFER_ON_DEVICE",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "firebase",
+    "hybrid-ai",
+    "prefer-on-device",
+    "gemini-nano",
+    "redaction",
+    "hipaa",
+    "privacy-first"
+  ],
+  "author": "Khanhtnq <218711032+Khanhtnq@users.noreply.github.com>",
+  "license": "MIT"
+}
