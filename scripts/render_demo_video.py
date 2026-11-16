@@ -1,4 +1,5 @@
 import os
+import shutil
 import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
@@ -12,7 +13,7 @@ def render_demo():
     temp_frames_dir = os.path.join(assets_dir, "temp_frames")
     os.makedirs(temp_frames_dir, exist_ok=True)
 
-    ffmpeg_bin = r"C:\Users\ADMIN\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-8.1.1-full_build\bin\ffmpeg.exe"
+    ffmpeg_bin = shutil.which("ffmpeg") or "ffmpeg"
 
     width, height = 1920, 1080
     fps = 30
