@@ -8,7 +8,7 @@ export const SENSITIVITY_PATTERNS = {
   EMAIL: /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g,
   PHONE: /(?:\+?1[-. ]?)?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})\b/g,
   CREDIT_CARD: /\b(?:\d{4}[- ]?){3}\d{4}\b/g,
-  API_KEY: /(?:api[_-]?key|secret|token|bearer|ghp|sk-proj)[=:\s'"]*([A-Za-z0-9_\-]{20,})/gi,
+  API_KEY: /(?:api[_-]?key|secret|token|bearer|ghp|sk-proj|sk-demo)[=:\s'"]*([A-Za-z0-9_\-]{20,})/gi,
   MEDICAL_RECORD_NUM: /\b(?:MRN|MEDREC|PATIENT)[#:\s]*([A-Z0-9]{6,12})\b/gi,
   DATE_OF_BIRTH: /\b(?:DOB|Birthdate|Born)[\s:]*(\d{1,2}[\/\-]\d{1,2}[\/\-]\d{2,4})\b/gi,
   IP_ADDRESS: /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/g

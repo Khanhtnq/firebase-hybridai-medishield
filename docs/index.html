@@ -206,7 +206,7 @@ Patient Name: Jane Doe | DOB: 11/24/1986
 SSN: 382-91-4921
 Contact: jane.doe@memorialhealth.org | Phone: (555) 912-4029
 Diagnosis: Acute Type-2 Diabetes exacerbation. Prescribed Metformin 500mg BID.
-Sensitive API Token: sk-proj-91024810294810928410294810294812</textarea>
+Sensitive API Token: sk-demo-redacted-sample-910248102948109284102948</textarea>
 
       <div class="controls">
         <button class="btn" onclick="processHybrid()">⚡ Run Hybrid Inference</button>
@@ -285,8 +285,8 @@ Sensitive API Token: sk-proj-91024810294810928410294810294812</textarea>
     }
 
     const SAMPLES = {
-      clinical: `Clinical Patient Intake Form:\nPatient Name: Jane Doe | DOB: 11/24/1986\nSSN: 382-91-4921\nContact: jane.doe@memorialhealth.org | Phone: (555) 912-4029\nDiagnosis: Acute Type-2 Diabetes exacerbation. Prescribed Metformin 500mg BID.\nSensitive API Token: sk-proj-91024810294810928410294810294812`,
-      code: `// AWS Lambda Backend Configuration\nconst AWS_SECRET_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE9812491284";\nconst DB_PASSWORD = "production_super_secret_master_password_9921";\n// Function exports\nexport async function handler(event) {\n  return { statusCode: 200, body: "Success" };\n}`,
+      clinical: `Clinical Patient Intake Form:\nPatient Name: Jane Doe | DOB: 11/24/1986\nSSN: 382-91-4921\nContact: jane.doe@memorialhealth.org | Phone: (555) 912-4029\nDiagnosis: Acute Type-2 Diabetes exacerbation. Prescribed Metformin 500mg BID.\nSensitive API Token: sk-demo-redacted-sample-910248102948109284102948`,
+      code: `// AWS Lambda Backend Configuration\nconst AWS_SECRET_ACCESS_KEY = "aws_demo_redacted_sample_key_9812491284";\nconst DB_PASSWORD = "production_super_secret_master_password_9921";\n// Function exports\nexport async function handler(event) {\n  return { statusCode: 200, body: "Success" };\n}`,
       benign: `The Apache Lucene search engine library uses inverted indices to deliver sub-millisecond full-text queries across distributed sharded nodes. It utilizes finite state transducers and BM25 relevance scoring algorithms.`
     };
 
@@ -310,7 +310,7 @@ Sensitive API Token: sk-proj-91024810294810928410294810294812</textarea>
         { regex: /\\b\\d{3}[-]?\\d{2}[-]?\\d{4}\\b/g, tag: '[REDACTED_SSN]' },
         { regex: /\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b/g, tag: '[REDACTED_EMAIL]' },
         { regex: /(?:\\+?1[-. ]?)?\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})\\b/g, tag: '[REDACTED_PHONE]' },
-        { regex: /(?:api[_-]?key|secret|token|sk-proj|AKIA)[=:\\s'"]*([A-Za-z0-9_\\-]{16,})/gi, tag: '[REDACTED_SECRET_KEY]' }
+        { regex: /(?:api[_-]?key|secret|token|sk-proj|sk-demo|AKIA)[=:\\s'"]*([A-Za-z0-9_\\-]{16,})/gi, tag: '[REDACTED_SECRET_KEY]' }
       ];
 
       for (const p of patterns) {
